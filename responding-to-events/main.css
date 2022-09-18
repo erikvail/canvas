@@ -1,0 +1,41 @@
+html, body {
+    height: 100vh;
+    background-color: #0b0c10;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: grid;
+    height: 100%;
+    grid-template-columns: 1fr 5fr 1fr;
+    grid-template-rows: 1fr 5fr 1fr;
+    grid-template-areas: "header header header"
+                        "left-sidebar main right-sidebar"
+                        "footer footer footer"
+}
+
+.canvas {
+    grid-area: main;
+    height: 400px;
+    width: 600px;
+    background-color: white;
+    margin: auto;
+}
+
+.bright-blue-border {
+    border-color: #66fcf1
+}
+
+.border-sm {
+    border-width: 5px;
+}
+
+.border-solid {
+    border-style: solid;
+}
+
+/* Utility Classes */
+.hidden {
+    display: none;
+}
